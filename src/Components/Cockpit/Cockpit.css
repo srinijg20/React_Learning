@@ -1,0 +1,20 @@
+.Button {
+    background-color: red;
+    color: white;
+    font: verdana;
+    padding: 8px;
+
+}
+
+.Button:hover {
+    background-color: salmon
+}
+
+.Button.Red {
+    background-color: green;
+
+}
+
+.Button.Red:hover {
+    background-color: lightgreen
+}

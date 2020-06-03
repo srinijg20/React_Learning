@@ -8,10 +8,10 @@ const mySet = new Set(a3)
 mySet.add({age:36,name:"Srini"})
 //console.log(mySet)
 
-const a4=[20,25,29,2,5];
+//const a4=[20,25,29,2,5];
 
 const newArray=a3.filter(n=>n.age ===36)
-//console.log(newArray)
+console.log(newArray)
 
 const mapArray= a3.map((a,index,a4)=>`${a.age} ::index:: ${index} ::array ${a4[index]}`)
 console.log(mapArray)
