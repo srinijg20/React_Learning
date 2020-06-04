@@ -66,14 +66,16 @@ class App extends Component {
       // <StyleRoot>
       <div className={classes.App}>
         <Cockpit
+          persons={this.state.persons}
           sPersons={this.state.showPersons}
           //clicked={() => this.toggleUsers(this.state.buttonName)}
           clicked={this.toggleUsers}
           bName={this.state.buttonName}
           title={this.props.appTitle}
         />
-        <Clock />
+        <Clock persons={this.state.persons}/>
         {persons}
+        {this.state.showPersons ? <button>ClickMe</button> : <p>no buttons</p> }
 
       </div>
       // </StyleRoot>S

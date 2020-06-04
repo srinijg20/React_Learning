@@ -1,7 +1,13 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import classes from './Cockpit.css'
 
 const Cockpit = (props) => {
+useEffect(() => {  
+  return () => {
+    alert('something changed')
+  }
+}, [props.persons])
+
   const btnClass = [classes.Button]
   console.log(btnClass);
   
